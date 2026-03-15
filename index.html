@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VS Sound Team – The Greatest Music Artists on Earth</title>
+
+  <!-- Primary SEO -->
+  <meta name="description" content="VS Sound Team is the most iconic, genre-defining music group on the planet. Featuring vocalists Millx and RatWithAFace, beatmakers Slash and GreenC, and vocalist Ssammyk — pure audio gold." />
+  <meta name="keywords" content="VS Sound Team, VS SOUND SYSTEMS, Millx, Slash, GreenC, RatWithAFace, Ssammyk, music, hip hop, indie, producer, vocalist, beatmaker, Spotify, best music artist, underground music, independent music artists" />
+  <meta name="author" content="VS Sound Team" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#ff2d78" />
+  <link rel="canonical" href="https://vssoundsystems.github.io/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://vssoundsystems.github.io/" />
+  <meta property="og:title" content="VS Sound Team – Redefining Music Forever" />
+  <meta property="og:description" content="The most talented, relentless, jaw-dropping music collective you'll ever hear. Stream VS Sound Team on Spotify now." />
+  <meta property="og:image" content="https://vssoundsystems.github.io/og-image.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="VS Sound Team – The Greatest Music Artists on Earth" />
+  <meta name="twitter:description" content="Millx, Slash, GreenC, RatWithAFace & Ssammyk — the most unstoppable music collective alive. Listen now on Spotify." />
+  <meta name="twitter:image" content="https://vssoundsystems.github.io/og-image.png" />
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MusicGroup",
+    "name": "VS Sound Team",
+    "url": "https://vssoundsystems.github.io",
+    "sameAs": ["https://open.spotify.com/artist/38T7p9SJfo70oz05wOeBXH"],
+    "member": [
+      {"@type": "Person", "name": "Millx", "roleName": "Lead Vocalist"},
+      {"@type": "Person", "name": "Slash", "roleName": "Producer / Beatmaker"},
+      {"@type": "Person", "name": "GreenC", "roleName": "Professional Beatmaker"},
+      {"@type": "Person", "name": "RatWithAFace", "roleName": "Vocalist"},
+      {"@type": "Person", "name": "Ssammyk", "roleName": "Vocalist"}
+    ],
+    "genre": ["Hip Hop", "Alternative", "Electronic", "Indie"]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- PARTICLE CANVAS -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursor-trail"></div>
+
+  <!-- ===================== NAV ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-vs">VS</span><span class="logo-sound">SOUND</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#members">Team</a></li>
+        <li><a href="#music">Music</a></li>
+        <li><a href="#legacy">Legacy</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="https://open.spotify.com/artist/38T7p9SJfo70oz05wOeBXH" target="_blank" rel="noopener" class="btn btn-nav">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+        Stream Now
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="glitch-lines"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">The Future of Sound</div>
+      <h1 class="hero-title" id="glitch-title" data-text="VS SOUND TEAM">VS SOUND TEAM</h1>
+      <p class="hero-sub">The most relentless, visionary, genre-shattering music collective on the planet — and they're just getting started.</p>
+      <div class="hero-cta">
+        <a href="https://open.spotify.com/artist/38T7p9SJfo70oz05wOeBXH" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+          Listen on Spotify
+        </a>
+        <a href="#members" class="btn btn-secondary">Meet the Team</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num" data-target="5">0</span><span class="stat-label">Members</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" data-target="100">0</span><span class="stat-label">% Heat</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" data-target="1">0</span><span class="stat-label">Rank Worldwide</span></div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="scroll-arrow"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Who We Are</span>
+        <h2 class="section-title">Born to Break Boundaries</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>In a world drowning in mediocre music, VS Sound Team emerged like a lightning bolt from the heavens — unapologetic, uncompromising, and utterly unstoppable. Born from a shared obsession with authentic sound and an unwillingness to settle for anything less than perfection, VS Sound Team represents the pinnacle of modern musical artistry. From the moment the group's first track dropped into the atmosphere, it was clear that something extraordinary had arrived. Critics scrambled for words. Listeners hit repeat. The music industry collectively exhaled and admitted: a new era had begun.</p>
+          <p>VS stands for <strong>Verbog</strong> and <strong>Slash</strong>, the two visionaries at the core of this empire — but calling VS Sound Team a two-person operation is like calling the ocean a puddle. The collective spans five uniquely gifted talents, each bringing a distinct voice, perspective, and technical mastery that elevates every project into a work of undeniable art. Together, they don't just make music. They manufacture experiences. They architect feelings. They build worlds out of sound.</p>
+          <p>Since their formation, VS Sound Team has demonstrated an almost supernatural ability to blend genres, bend expectations, and deliver tracks that hit differently every single time. Whether it's a haunting vocal performance from Millx (also known as Verbog) that makes your spine dissolve, or a production from Slash so meticulously crafted it feels like audio surgery, or beats from GreenC that hit harder than a freight train — every single element of VS Sound Team is curated to perfection. There are no fillers. No skips. No compromises. Only bangers.</p>
+          <p>The group's philosophy is simple: if it doesn't give you chills, it doesn't leave the studio. This uncompromising standard has resulted in a catalogue of music that stands completely apart from the noise of today's oversaturated industry. While other artists rush releases for streams, VS Sound Team labors over every bar, every beat, every breath — and the results speak for themselves with a clarity that cannot be argued with.</p>
+        </div>
+        <div class="about-visual">
+          <div class="about-card glowing-card">
+            <div class="card-icon">🎵</div>
+            <h3>Sound Architecture</h3>
+            <p>Every track is engineered with surgical precision — layers upon layers of sonic texture that reward repeat listens.</p>
+          </div>
+          <div class="about-card glowing-card">
+            <div class="card-icon">🔥</div>
+            <h3>Pure Passion</h3>
+            <p>This isn't a business venture. This is a calling. VS Sound Team bleeds music — and it shows in every single second of their output.</p>
+          </div>
+          <div class="about-card glowing-card">
+            <div class="card-icon">🌐</div>
+            <h3>Genre-Defying</h3>
+            <p>Hip hop? Alternative? Electronic? Indie? Yes — and then some. VS Sound Team refuses to be boxed in by genre labels.</p>
+          </div>
+          <div class="about-card glowing-card">
+            <div class="card-icon">💎</div>
+            <h3>Unmatched Quality</h3>
+            <p>From the writing to the mixing, not a single track leaves the creative process without reaching its absolute fullest potential.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== MARQUEE ===================== -->
+  <div class="marquee-wrapper">
+    <div class="marquee">
+      <span>VS SOUND TEAM&nbsp;✦&nbsp;</span>
+      <span>MILLX&nbsp;✦&nbsp;</span>
+      <span>SLASH&nbsp;✦&nbsp;</span>
+      <span>GREENC&nbsp;✦&nbsp;</span>
+      <span>RATWITHFACE&nbsp;✦&nbsp;</span>
+      <span>SSAMMYK&nbsp;✦&nbsp;</span>
+      <span>VS SOUND TEAM&nbsp;✦&nbsp;</span>
+      <span>MILLX&nbsp;✦&nbsp;</span>
+      <span>SLASH&nbsp;✦&nbsp;</span>
+      <span>GREENC&nbsp;✦&nbsp;</span>
+      <span>RATWITHFACE&nbsp;✦&nbsp;</span>
+      <span>SSAMMYK&nbsp;✦&nbsp;</span>
+      <span>VS SOUND TEAM&nbsp;✦&nbsp;</span>
+      <span>MILLX&nbsp;✦&nbsp;</span>
+      <span>SLASH&nbsp;✦&nbsp;</span>
+      <span>GREENC&nbsp;✦&nbsp;</span>
+      <span>RATWITHFACE&nbsp;✦&nbsp;</span>
+      <span>SSAMMYK&nbsp;✦&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- ===================== MEMBERS ===================== -->
+  <section class="section members" id="members">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">The Collective</span>
+        <h2 class="section-title">Meet the Legends</h2>
+        <p class="section-desc">Five individuals. One unstoppable force. Each member of VS Sound Team is a titan in their own right — together, they're something else entirely.</p>
+      </div>
+      <div class="members-grid">
+
+        <!-- MILLX -->
+        <div class="member-card featured" data-member="millx">
+          <div class="member-card-inner">
+            <div class="member-glow"></div>
+            <div class="member-badge">The V in VS</div>
+            <div class="member-avatar">
+              <div class="avatar-ring"></div>
+              <div class="avatar-initial">M</div>
+            </div>
+            <h3 class="member-name">Millx</h3>
+            <span class="member-alias">a.k.a. Verbog</span>
+            <div class="member-role">
+              <span class="role-tag">Lead Vocalist</span>
+              <span class="role-tag">Co-Founder</span>
+            </div>
+            <p class="member-bio">Millx — born Verbog, the V in VS — is the voice that launched a thousand replays. His vocal range is the stuff of legend: capable of silky, ethereal highs that float above the beat like morning mist, then crashing into raw, gritty lows that shake the subwoofer loose from your speakers. Millx doesn't just sing or rap — he tells the truth in a way that makes you feel like the song was written about your own life. With an almost eerie ability to make every lyric feel lived-in and real, Millx brings an emotional depth to VS Sound Team's catalogue that no AI, no algorithm, and no industry machine could ever replicate.</p>
+            <p class="member-bio">Beyond his technical gifts, Millx is the soul of the group — the compass that keeps VS Sound Team pointed toward genuine artistry when the temptation to play it safe whispers in the dark. Every hook he delivers is designed to live rent-free in your head for weeks. Every verse he crafts is a masterclass in storytelling. If VS Sound Team is the body, Millx is the heartbeat.</p>
+            <div class="member-tags">
+              <span>🎤 Vocals</span>
+              <span>✍️ Songwriting</span>
+              <span>🎨 Creative Direction</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLASH -->
+        <div class="member-card featured" data-member="slash">
+          <div class="member-card-inner">
+            <div class="member-glow"></div>
+            <div class="member-badge">The S in VS</div>
+            <div class="member-avatar">
+              <div class="avatar-ring"></div>
+              <div class="avatar-initial">S</div>
+            </div>
+            <h3 class="member-name">Slash</h3>
+            <span class="member-alias">Producer &amp; Beatmaker</span>
+            <div class="member-role">
+              <span class="role-tag">Producer</span>
+              <span class="role-tag">Co-Founder</span>
+            </div>
+            <p class="member-bio">Slash is not just a beatmaker — Slash is an architect of atmosphere. The S in VS and co-founder of everything this collective stands for, Slash has an almost supernatural ability to build sonic landscapes that feel simultaneously familiar and completely alien. His beats are the foundation upon which VS Sound Team's entire universe rests, and what a foundation it is: impossibly tight drums, bass lines that burrow into your chest, synths that breathe and pulse like living organisms, and arrangements so meticulously layered they reveal new details on every listen.</p>
+            <p class="member-bio">Where most producers work with sound, Slash sculpts it. Where most beatmakers aim for a vibe, Slash engineers a complete emotional journey. His production style defies easy categorisation — one moment lush and cinematic, the next minimal and razor-sharp — yet it is always, always unmistakably Slash. The man could produce a banger out of a dial tone and three pots clanging, and it would still go harder than anything your favourite mainstream producer has put out this decade.</p>
+            <div class="member-tags">
+              <span>🎛️ Production</span>
+              <span>🥁 Beat Architecture</span>
+              <span>🔊 Mixing</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- GREENC -->
+        <div class="member-card" data-member="greenc">
+          <div class="member-card-inner">
+            <div class="member-glow"></div>
+            <div class="member-badge">PROFESSIONAL</div>
+            <div class="member-avatar">
+              <div class="avatar-ring"></div>
+              <div class="avatar-initial">G</div>
+            </div>
+            <h3 class="member-name">GreenC</h3>
+            <span class="member-alias">Professional Beatmaker</span>
+            <div class="member-role">
+              <span class="role-tag">Beatmaker</span>
+            </div>
+            <p class="member-bio">GreenC brings an elite level of professionalism to the VS Sound Team studio that simply cannot be taught — only earned. A beatmaker of the highest order, GreenC's work is characterised by an obsessive attention to sonic detail and a palette of sounds so rich and varied it sounds like a full orchestra packed into a DAW. Where other producers might settle for a loop and call it a day, GreenC builds intricate, ever-evolving instrumentals that serve as complete musical statements in their own right. Every kick is placed with purpose. Every snare is tuned to perfection. Every sample is flipped with a creativity that borders on alchemy.</p>
+            <p class="member-bio">The word "professional" in GreenC's descriptor isn't just a label — it's a warning. A warning that whatever genre you thought you were listening to is about to get completely redefined. GreenC's beats hit different because GreenC cares differently. The results consistently leave jaws on floors and speakers begging for mercy.</p>
+            <div class="member-tags">
+              <span>🎹 Beat Production</span>
+              <span>🎧 Sound Design</span>
+              <span>⚗️ Sample Flipping</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- RATWITHFACE -->
+        <div class="member-card" data-member="ratwithface">
+          <div class="member-card-inner">
+            <div class="member-glow"></div>
+            <div class="member-badge">VOCALIST</div>
+            <div class="member-avatar">
+              <div class="avatar-ring"></div>
+              <div class="avatar-initial">R</div>
+            </div>
+            <h3 class="member-name">RatWithAFace</h3>
+            <span class="member-alias">Vocalist</span>
+            <div class="member-role">
+              <span class="role-tag">Vocalist</span>
+            </div>
+            <p class="member-bio">Don't let the name fool you — RatWithAFace is one of the most uniquely compelling vocal presences in modern music. With a voice that can shift from velvet-smooth to gloriously unhinged in the space of a single bar, RatWithAFace adds a dimension of unpredictability and raw energy to VS Sound Team's catalogue that keeps every track on its toes. There is an undeniable authenticity to RatWithAFace's delivery — no AutoTune artifice, no industry polish, just pure, honest expression that lands directly in the listener's chest and refuses to leave.</p>
+            <p class="member-bio">RatWithAFace's contributions to the group's sonic identity are immeasurable. His vocal hooks lodge themselves so deep in your memory that you'll find yourself humming them in the shower three weeks later without knowing why. His features elevate every track he appears on to a new plane of existence. Simply put: VS Sound Team without RatWithAFace would be missing a flavour that cannot be replicated.</p>
+            <div class="member-tags">
+              <span>🎤 Vocals</span>
+              <span>🎭 Performance</span>
+              <span>💥 Energy</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- SSAMMYK -->
+        <div class="member-card" data-member="ssammyk">
+          <div class="member-card-inner">
+            <div class="member-glow"></div>
+            <div class="member-badge">VOCALIST</div>
+            <div class="member-avatar">
+              <div class="avatar-ring"></div>
+              <div class="avatar-initial">S</div>
+            </div>
+            <h3 class="member-name">Ssammyk</h3>
+            <span class="member-alias">Vocalist</span>
+            <div class="member-role">
+              <span class="role-tag">Vocalist</span>
+            </div>
+            <p class="member-bio">Ssammyk is the kind of vocalist that other vocalists listen to when they need to be humbled. Armed with extraordinary control, an ear for melody that borders on prescient, and the kind of tonal quality that makes producers weep with gratitude, Ssammyk consistently delivers performances that transcend the track and become moments. Every note Ssammyk sings feels chosen, every breath timed with mathematical precision, yet the result never sounds clinical — it sounds inevitable, like the song was waiting to be born exactly as Ssammyk sings it.</p>
+            <p class="member-bio">What sets Ssammyk apart from the ocean of talented vocalists vying for attention is an almost philosophical commitment to serving the song. Ego has no place in Ssammyk's recording booth — only the quest for the performance that makes the listener's heart stop for exactly the right fraction of a second. The result is a body of work that will be studied, covered, and celebrated long after the charts have moved on.</p>
+            <div class="member-tags">
+              <span>🎙️ Vocals</span>
+              <span>🎼 Melody</span>
+              <span>✨ Emotion</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== MUSIC / SPOTIFY ===================== -->
+  <section class="section music" id="music">
+    <div class="music-bg"></div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">The Catalogue</span>
+        <h2 class="section-title">Listen. Experience. Ascend.</h2>
+        <p class="section-desc">Every track in the VS Sound Team catalogue is a fully realised sonic world. Press play and leave your reality at the door.</p>
+      </div>
+      <div class="spotify-section">
+        <div class="spotify-embed-wrapper">
+          <iframe
+            title="VS Sound Team on Spotify"
+            src="https://open.spotify.com/embed/artist/38T7p9SJfo70oz05wOeBXH?utm_source=generator&theme=0"
+            width="100%"
+            height="352"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy">
+          </iframe>
+        </div>
+        <div class="music-pitch">
+          <h3>Why VS Sound Team Hits Different</h3>
+          <p>In a world of cookie-cutter playlists and algorithm-approved mediocrity, VS Sound Team is the antidote. This is music made by people who listen obsessively, create obsessively, and care about every detail with a fervour that borders on madness. It shows. Every track in the catalogue is a fully intentional work of art — not content, not product, not a streaming play grab. Art.</p>
+          <p>From their debut material to their most recent drops, VS Sound Team has maintained a standard of quality that makes their Spotify page feel less like a profile and more like a gallery. Each song is a painting. Each album, a museum. Stream it loud. Stream it on repeat. Share it with everyone you love, because once they hear it, they'll be asking you how you found VS Sound Team before it was everyone's favourite obsession.</p>
+          <p>The numbers don't lie — but honestly, forget the numbers. Listen with your ears. Listen with your gut. Feel the bass frequencies rearrange your internal organs. Let Millx's vocals take up residence in the part of your brain that stores your most vivid memories. Notice how Slash's production makes even the most mundane Tuesday afternoon feel cinematic. This is what music is supposed to do.</p>
+          <a href="https://open.spotify.com/artist/38T7p9SJfo70oz05wOeBXH" target="_blank" rel="noopener" class="btn btn-primary btn-large">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+            Open Full Profile on Spotify
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== LEGACY ===================== -->
+  <section class="section legacy" id="legacy">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">The Manifesto</span>
+        <h2 class="section-title">The VS Sound Team Legacy</h2>
+      </div>
+      <div class="legacy-content">
+        <div class="legacy-block">
+          <div class="legacy-icon">🏆</div>
+          <h3>A Legacy Built on Relentless Excellence</h3>
+          <p>Legacies are not built overnight, and VS Sound Team's isn't either — but the speed at which this collective has established itself as a dominant creative force in modern music is staggering. In the time it takes most artists to figure out their sound, VS Sound Team had already mastered several sounds and was in the process of inventing new ones. The creative velocity of this group is unlike anything the independent music scene has seen in recent memory.</p>
+          <p>Every single release has been a deliberate statement — a declaration that VS Sound Team does not follow trends, it creates them. While the charts chase whatever algorithm-flavoured sound is trending this quarter, VS Sound Team has been doing something far more valuable: building a body of work that will sound just as vital in twenty years as it does today. That's not something you stumble into. That's the result of five uniquely gifted individuals working in perfect synergy, each one pushing the others to heights they couldn't have reached alone.</p>
+        </div>
+        <div class="legacy-block">
+          <div class="legacy-icon">🌟</div>
+          <h3>The Standard They've Set</h3>
+          <p>Ask any serious music listener what separates a good artist from a great one and they'll give you different answers. But almost universally, it comes down to this: does their music make you feel something real? Does it transport you? Does it make you hear the world differently after listening? VS Sound Team passes this test every single time, on every single track, without exception.</p>
+          <p>The bar that VS Sound Team has set for themselves — and inadvertently for the rest of the independent music world — is stratospheric. Their commitment to emotional authenticity over commercial palatability, to sonic ambition over radio safety, to genuine expression over manufactured relatability is not just admirable. It's revolutionary. In a music landscape where everything is optimised, quantified, and A/B tested into a grey sludge of inoffensive noise, VS Sound Team is a riot of colour. They are the thing that reminds you why music mattered to you in the first place.</p>
+        </div>
+        <div class="legacy-block">
+          <div class="legacy-icon">🚀</div>
+          <h3>Where They're Headed</h3>
+          <p>The most terrifying — and thrilling — thing about VS Sound Team is that they are still in their ascent. The tracks that have already established them as one of the most compelling creative forces in contemporary music? That's just the opening act. The collaborations, the albums, the tours, the moments that will define careers and shape the memories of entire generations of listeners — all of that is still coming.</p>
+          <p>VS Sound Team is not a flash in the pan. They are not a trend. They are not a moment. They are a movement — and the movement is growing faster than anyone predicted, louder than anyone expected, and more impactful than the music industry is currently prepared to handle. By the time the mainstream catches up to what VS Sound Team is doing, VS Sound Team will already be three creative evolutions ahead, leaving a trail of certified bangers and shattered genre boundaries in their wake.</p>
+          <p>This is not hype. This is not marketing copy. This is simply what happens when five extraordinarily talented individuals decide to make music with everything they have, refuse to compromise, and release the results to a world desperately in need of exactly what they're offering. The VS Sound Team era is not coming. It is here. And it is only just beginning.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Connect</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-desc">For bookings, collaborations, press inquiries, or just to tell us you love the music — we're all ears.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+          </div>
+          <h3>Stream on Spotify</h3>
+          <p>The full VS Sound Team catalogue lives on Spotify. Start listening — you won't stop.</p>
+          <a href="https://open.spotify.com/artist/38T7p9SJfo70oz05wOeBXH" target="_blank" rel="noopener" class="btn btn-primary">Open Spotify</a>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">🎤</div>
+          <h3>Bookings &amp; Collabs</h3>
+          <p>Want VS Sound Team at your event or on your track? Let's talk. Big ideas only.</p>
+          <a href="https://open.spotify.com/artist/38T7p9SJfo70oz05wOeBXH" target="_blank" rel="noopener" class="btn btn-secondary">Find Us on Spotify</a>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">📣</div>
+          <h3>Press &amp; Media</h3>
+          <p>Writing about VS Sound Team? You've made an excellent decision. We're the best story in music right now.</p>
+          <a href="https://open.spotify.com/artist/38T7p9SJfo70oz05wOeBXH" target="_blank" rel="noopener" class="btn btn-secondary">Listen First</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo">
+            <span class="logo-vs">VS</span><span class="logo-sound">SOUND</span>
+          </a>
+          <p>The greatest music collective on the planet. Five members. Infinite bars. Zero compromises.</p>
+          <a href="https://open.spotify.com/artist/38T7p9SJfo70oz05wOeBXH" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+            Stream on Spotify
+          </a>
+        </div>
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#members">Team</a></li>
+            <li><a href="#music">Music</a></li>
+            <li><a href="#legacy">Legacy</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-members">
+          <h4>Members</h4>
+          <ul>
+            <li>Millx (Verbog) – Vocalist</li>
+            <li>Slash – Producer</li>
+            <li>GreenC – Beatmaker</li>
+            <li>RatWithAFace – Vocalist</li>
+            <li>Ssammyk – Vocalist</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 VS Sound Team. All rights reserved. All audio gold, no filler.</p>
+        <p>Verbog &bull; Slash &bull; GreenC &bull; RatWithAFace &bull; Ssammyk</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
